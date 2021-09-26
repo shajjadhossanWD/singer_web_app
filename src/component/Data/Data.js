@@ -8,11 +8,11 @@ const Data = (props) => {
              <div className="card h-100 singleCard">
                  <img src={img} className="card-img-top" alt="" />
                  <div className="card-body cardDetails">
-                     <h5>Name:{name}</h5>
+                     <h4>Name: <span>{name}</span> </h4>
                      <p>Net Worth : {net_worth}</p>
                      <p>From : {country} </p>
                      <p>Profession : {profession} </p>
-                     <p><b>Hire Amount : ৳ {salary}</b></p>
+                     <p><b>Hire Amount : <span>৳ {salary}</span> </b></p>
                      <Rating
                         initialRating={star}
                         readonly

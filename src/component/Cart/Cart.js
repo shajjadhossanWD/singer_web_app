@@ -1,4 +1,5 @@
 import React from 'react';
+import Cartdata from '../Cartdata/Cartdata';
 import './Cart.css';
 const Cart = (props) => {
     const {cart} = props;
@@ -7,13 +8,15 @@ const Cart = (props) => {
         totalCost = parseFloat(totalCost + details.salary);
      }
     return (
-        <div>
-            <h4>Singers Added : {props.cart.length}</h4>
-            <h4>Total Cost: {totalCost}</h4>
+        <div className = "addTotal">
+            <h4>Singers Added : <span>{props.cart.length}</span> </h4>
+            <h5>Total Cost: <span>৳ {totalCost}</span> </h5>
             <ul>
               {
                 cart.map(singer => 
-                <li key= {singer.id}>{singer.name}</li>)
+                <Cartdata key = {singer.id} 
+                singer={singer}/>
+                )
               }
             </ul>
                

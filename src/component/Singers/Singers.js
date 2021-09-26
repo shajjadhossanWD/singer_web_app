@@ -29,9 +29,9 @@ const addToCart = data =>{
 
     return (
         <div>
-            <div className="row">
-                <div className="col-lg-2"></div>
-                <div className="col-lg-7 singers row row-cols-1 row-cols-md-3 g-3">
+            <div className="row mainDiv">
+                <div className="col-lg-1"></div>
+                <div className="col-lg-8 singers row row-cols-1 row-cols-md-3 g-4">
                    {
                        singers.map(singer => <Data 
                        key = {singer.id}

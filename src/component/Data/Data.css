@@ -1,6 +1,10 @@
 .singleCard{
-     box-shadow: 1px 2px 10px 2px rgb(195, 195, 255);
+     box-shadow: 1px 0.5px 8px 1px rgb(195, 195, 255);
      border-radius: 10px;
+     background-color: rgb(36, 36, 66);
+     color: white;
+     font-family: 'Gemunu Libre', sans-serif;
+     letter-spacing: 1.5px;
 }
 
 .singleCard:hover{
@@ -9,6 +13,12 @@
 }
 .cardDetails{
     line-height: 12px;
+}
+.cardDetails h4{
+    color: rgb(235, 179, 38);
+}
+.cardDetails p span{
+    color: goldenrod;
 }
 .rating{
     color: goldenrod;

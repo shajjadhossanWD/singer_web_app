@@ -1,4 +1,16 @@
-.detailsDiv{
-    line-height: 15px;
-    text-align: start;
+.addTotal{
+    font-family: 'Gemunu Libre', sans-serif;
+}
+.addTotal h4{
+    padding-top: 15px;
+    color: white
+}
+.addTotal h5{
+    color: white
+}
+.addTotal h4 span{
+    color: goldenrod;
+}
+.addTotal h5 span{
+    color: goldenrod;
 }
