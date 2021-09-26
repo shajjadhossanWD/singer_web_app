@@ -19,8 +19,12 @@ useEffect(()=>{
 },[])
 
 const addToCart = data =>{
-    const getData = [...cart, data];
-    setCart(getData);
+    const check = cart.find(singer => singer.id === data.id);
+    if(!check){
+        const getData = [...cart, data];
+        setCart(getData);
+    }
+   
 }
 
     return (
@@ -32,7 +36,7 @@ const addToCart = data =>{
                        singers.map(singer => <Data 
                        key = {singer.id}
                        singer = {singer}  
-                       addToCart = {addToCart} 
+                       addToCart = {addToCart}  
                        />)
                    }
                 </div>
