@@ -1,6 +1,8 @@
 import React from 'react';
 import Rating from 'react-rating';
 import './Data.css';
+
+// Data component for showen all data 
 const Data = (props) => {
     const {img, name, net_worth, country, profession, salary,star} = props.singer
     return (
@@ -22,7 +24,7 @@ const Data = (props) => {
                      <br />
                      <button 
                      onClick={()=> props.addToCart(props.singer)} 
-                     className='addcartbtn'><i class="fas fa-cart-plus"></i> add to cart</button>
+                     className='addcartbtn'><i className="fas fa-cart-plus"></i> add to cart</button>
                  </div>
                   
              </div>

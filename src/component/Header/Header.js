@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-
+// simple header component showen my website heading 
 const Header = () => {
     return (
         <div className="header">

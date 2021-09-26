@@ -1,3 +1,4 @@
+/* all card style  */
 .singleCard{
      box-shadow: 1px 0.5px 8px 1px rgb(195, 195, 255);
      border-radius: 10px;
@@ -9,7 +10,7 @@
 
 .singleCard:hover{
     transition: all 1s ease-in-out;
-    transform: scale(1.04);
+    transform: scale(1.01);
 }
 .cardDetails{
     line-height: 12px;
